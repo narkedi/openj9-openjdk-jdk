@@ -1,1 +1,121 @@
-*	-text
+# This .gitattributes file will cause all text files EXCEPT for
+# *.xml, *.dtd, git's .gitattributes and .gitignore
+# files to be encoded as EBCDIC.
+# Selected binary files will not be translated at all.
+
+# The default for text files
+* git-encoding=iso8859-1 working-tree-encoding=ibm-1047
+
+# Specific types of files remain as ASCII
+*.xml git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+*.dtd git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+*.xsd git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+*.laf git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+*.po git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+*.sgml git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+*.jcod git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+
+make/data/lsrdata/language-subtag-registry.txt git-encoding=iso8859-1 working-tree-encoding=iso8859-1 
+make/data/publicsuffixlist/public_suffix_list.dat git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+make/data/dtdbuilder/public.map git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/ProblemList*.txt git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/util/Locale/icuLocales.txt git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/com/sun/security/auth/module/KeyStoreLoginModule/OptionTest.keyPass git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/com/sun/security/auth/module/KeyStoreLoginModule/OptionTest.storePass git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/net/httpclient/docs/files/*.txt git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/security/cert/CertificateFactory/openssl/pem git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/security/cert/CertPathValidatorException/jdk6.serial git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/security/cert/X509Certificate/emptySubjectCert git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/security/cert/X509Certificate/emptyIssuerCert git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/security/cert/X509Certificate/certextkeyusage git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/sun/net/InetAddress/nameservice/simple/DefaultCachingHosts git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/sun/net/InetAddress/nameservice/simple/CacheTestHosts git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/sun/text/resources/LocaleData.cldr git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/sun/text/resources/LocaleData git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/javax/management/security/password.properties git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/javax/management/security/truststoreAgent git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/javax/management/security/truststoreClient git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/javax/management/security/keystoreAgent git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/javax/management/security/keystoreClient git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/text/BreakIterator/broken_th_TH.txt git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/java/text/BreakIterator/test_th_TH.txt git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+*.cer git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+cert_file git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+speech2* git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+*.key git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/resources/mozilla_compat.js git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+src/java.desktop/share/classes/javax/swing/text/rtf/charsets/*.txt git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+src/java.desktop/share/classes/javax/swing/text/html/default.css git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+test/jdk/javax/management/loading/*.html git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+
+# Files that need to be in UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/ansi.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/capabilities.txt git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/colors.txt git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/dumb-colors.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/dumb.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/screen-256color.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/screen.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/windows-256color.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/windows-conemu.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/windows-vtp.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/windows.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/xterm-256color.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/xterm.caps git-encoding=UTF-8 working-tree-encoding=UTF-8
+
+# test java files that need to be in UTF-8 as they are compiled as UTF-8
+test/jdk/java/text/Format/DateFormat/Bug8139572.java git-encoding=UTF-8 working-tree-encoding=UTF-8
+test/jdk/java/util/regex/GraphemeBreakProperty.txt git-encoding=UTF-8 working-tree-encoding=UTF-8 
+test/jdk/java/util/regex/GraphemeBreakTest.txt git-encoding=UTF-8 working-tree-encoding=UTF-8
+
+test/jdk/java/net/ResponseCache/file1.cache git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/javax/xml/crypto/dsig/data/xml-stylesheet git-encoding=UTF-8 working-tree-encoding=UTF-8
+test/jdk/javax/xml/crypto/dsig/data/xml-stylesheet.b64 git-encoding=UTF-8 working-tree-encoding=UTF-8
+
+# META-INF/services/* files must be UTF-8 by the spec, iso8859-1 should suffice so can read on zOS
+**/META-INF/services/* git-encoding=iso8859-1 working-tree-encoding=iso8859-1 
+test/jdk/java/rmi/server/RMIClassLoader/spi/java.rmi.server.RMIClassLoaderSpi git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+
+# git's files (which MUST be ASCII)
+.gitattributes git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+.gitignore git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+closed/.gitattributes.*.zos git-encoding=iso8859-1 working-tree-encoding=iso8859-1
+
+# Binary files
+*.jpg git-encoding=BINARY working-tree-encoding=BINARY
+*.png git-encoding=BINARY working-tree-encoding=BINARY
+*.gif git-encoding=BINARY working-tree-encoding=BINARY
+*.zip git-encoding=BINARY working-tree-encoding=BINARY
+*.icu git-encoding=BINARY working-tree-encoding=BINARY
+*.class git-encoding=BINARY working-tree-encoding=BINARY
+*.ser git-encoding=BINARY working-tree-encoding=BINARY
+*.ser.txt git-encoding=BINARY working-tree-encoding=BINARY
+*.jar git-encoding=BINARY working-tree-encoding=BINARY
+*keystore git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/lib/testlibrary/jdk/testlibrary/testkeys git-encoding=BINARY working-tree-encoding=BINARY
+*cacerts git-encoding=BINARY working-tree-encoding=BINARY
+*truststore git-encoding=BINARY working-tree-encoding=BINARY
+*.classfile git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/lang/Character/charprop*.bin git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/util/Locale/Bug4184873_* git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/util/Locale/serialized/* git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/BasicPermission/PermClass.1.* git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/BasicPermission/SerialVersion.1.* git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/KeyStore/PKCS12/certs/convertP12/*.data git-encoding=BINARY working-tree-encoding=BINARY
+*.pem git-encoding=BINARY working-tree-encoding=BINARY
+*.data git-encoding=BINARY working-tree-encoding=BINARY
+*.jks git-encoding=BINARY working-tree-encoding=BINARY
+*.spp git-encoding=BINARY working-tree-encoding=BINARY
+*.pf git-encoding=BINARY working-tree-encoding=BINARY
+*.p12 git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/Policy/SignedJar/SignedJarTest_1.policy git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/Policy/SignedJar/SignedJarTest_2.policy git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/Policy/SignedJar/keypass git-encoding=BINARY working-tree-encoding=BINARY
+src/jdk.localedata/share/classes/sun/text/resources/ext/thai_dict git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/text/Format/NumberFormat/DecimalFormatSymbols.142.txt git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/UnresolvedPermission/AccessorMethods.ca git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/UnresolvedPermission/AccessorMethods.signer1 git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/UnresolvedPermission/AccessorMethods.signer2 git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/SecureRandom/sha1prng-old.bin git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/security/SecureRandom/sha1prng-new.bin git-encoding=BINARY working-tree-encoding=BINARY
+test/jdk/java/rmi/MarshalledObject/compare/annotatedRef git-encoding=BINARY working-tree-encoding=BINARY
